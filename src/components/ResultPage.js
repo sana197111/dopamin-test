@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { result } from '../contents/results'; // result.js에서 결과 데이터를 가져옵니다.
+import poster from '../assets/poster.jpeg';
 
 function ResultPage() {
     const { id } = useParams(); // URL에서 결과 유형 ID를 가져옵니다.
@@ -8,7 +9,7 @@ function ResultPage() {
     const resultData = result[resultIndex]; // 해당 ID에 해당하는 결과 데이터를 가져옵니다.
 
     return (
-        <div className="min-h-screen overflow-y-auto font-lab-digital max-h-screen p-4 flex flex-col items-center justify-center bg-black background-gif">
+        <div className="min-h-screen overflow-y-auto font-lab-digital p-4 flex flex-col items-center justify-center bg-black background-gif">
             {resultData && ( // resultData가 존재하는 경우에만 렌더링합니다.
                 <div style={{
                     borderRadius: '5px',
@@ -16,8 +17,7 @@ function ResultPage() {
                     padding: '40px',
                     maxWidth: '700px',
                     textAlign: 'center',
-                    margin: '20px 0',
-                    marginTop: '100px'
+                    margin: '20px 0'
                 }}>
                     <h2 className="font-DNFBitBitv2 text-3xl mb-6" style={{color: "#75BF42"}}>{resultData.name}</h2>
                     <h1 className="font-DNFBitBitv2 text-5xl mb-6" style={{color: "#ffffff"}}>{resultData.dopamineLevel}</h1>
@@ -27,7 +27,9 @@ function ResultPage() {
                     <p className="mb-8" style={{color: "#fff0f0"}}>{resultData.currentSituation}</p>
                     <p className="mb-2 font-DNFBitBitv2 text-xl" style={{color: "#A3CC40"}}>도파민과 친해지려면?</p>
                     <p className="mb-4" style={{color: "#fff0f0"}}>{resultData.gettingCloser}</p>
-                    <div style={{
+                    <div 
+                    className="mb-6"
+                    style={{
                         display: "flex",
                         flexDirection: "column",
                         alignItems: "center", // 가로 방향으로 중앙 정렬
@@ -65,6 +67,15 @@ function ResultPage() {
                             }}>
                             홈페이지 바로가기
                         </button>
+                    </div>
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        margin: '20px 0',
+                    }}>
+                        <div style={{ width: '80%' }}>
+                            <img src={poster} alt="Poster" style={{ width: '100%', height: 'auto' }} />
+                        </div>
                     </div>
                 </div>
             )}

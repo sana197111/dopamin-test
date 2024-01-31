@@ -29,7 +29,7 @@ function Main() {
                         textAlign: 'center',
                         margin: 'auto'
                     }}>
-                        <h1 className="mb-10 text-center font-DNFBitBitv2 text-6xl" style={{
+                        <h1 className="mb-10 text-center font-DNFBitBitv2 text-5xl" style={{
                             background: "linear-gradient(#75BF42, #A3CC40)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent"

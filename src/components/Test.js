@@ -40,7 +40,7 @@ const Test = () => {
     };
 
     return (
-        <div className="min-h-screen overflow-y-auto font-lab-digital max-h-screen p-4 flex flex-col items-center justify-center bg-black background-gif">
+        <div className="min-h-screen overflow-y-auto font-lab-digital p-4 flex flex-col items-center justify-center bg-black background-gif">
             {id && parseInt(id, 7) < 7 && (
                 <div style={{
                         borderRadius: '5px',
@@ -48,8 +48,7 @@ const Test = () => {
                         padding: '60px 40px 40px 40px',
                         maxWidth: '700px',
                         textAlign: 'center',
-                        margin: 'auto',
-                        marginTop: '60px'
+                        margin: 'auto'
                     }}>
                     <h2 className="mb-6 mt-8 text-center font-DNFBitBitv2 text-5xl" style={{
                         background: "linear-gradient(#75BF42, #A3CC40)",
@@ -58,10 +57,10 @@ const Test = () => {
                     }}>
                         Q.{id}
                     </h2>
-                    <h3 className="mb-4 text-center text-3xl" style={{color: "#A3CC40"}}>
+                    <h3 className="mb-6 text-center text-3xl" style={{color: "#A3CC40"}}>
                         <span dangerouslySetInnerHTML={{ __html: curQuiz.title }}></span>
                     </h3>
-                    <img src={curQuiz.image} alt={curQuiz.title} style={{width: '50%', height: 'auto', display: 'block', margin: 'auto'}} />
+                    <img src={curQuiz.image} alt={curQuiz.title} style={{width: '100%', height: 'auto', display: 'block', margin: 'auto'}} />
                     <br />
                     {curQuiz.content && curQuiz.content.map((item, index) => (
                         <button 

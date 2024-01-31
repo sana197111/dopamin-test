@@ -43,7 +43,7 @@ const Shorts = () => {
                 textAlign: 'center',
                 margin: 'auto'
             }}>
-                <h2 className="mb-5 text-center font-DNFBitBitv2 text-4xl" style={{
+                <h2 className="mb-5 text-center font-DNFBitBitv2 text-3xl" style={{
                     background: "linear-gradient(#75BF42, #A3CC40)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent"
