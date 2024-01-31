@@ -47,3 +47,9 @@
     background-color: #A3CC40; /* 클릭 상태일 때의 배경 색상 */
     color: white; /* 클릭 상태일 때의 텍스트 색상 */
 }
+
+.button-active:focus {
+    /* 포커스 상태일 때의 스타일 */
+    background-color: #92b837; /* hover와 다른 색상을 사용 */
+    outline: none; /* 포커스 테두리 제거 */
+}

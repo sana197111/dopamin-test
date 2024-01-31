@@ -19,8 +19,8 @@ function ResultPage() {
                     textAlign: 'center',
                     margin: '20px 0'
                 }}>
-                    <h2 className="font-DNFBitBitv2 text-3xl mb-6" style={{color: "#75BF42"}}>{resultData.name}</h2>
-                    <h1 className="font-DNFBitBitv2 text-5xl mb-6" style={{color: "#ffffff"}}>{resultData.dopamineLevel}</h1>
+                    <h1 className="font-DNFBitBitv2 text-3xl mb-6" style={{color: "#75BF42"}}>{resultData.name}</h1>
+                    <h2 className="font-DNFBitBitv2 text-5xl mb-10" style={{color: "#ffffff"}}>{resultData.dopamineLevel}</h2>
                     <h3 className="font-DNFBitBitv2 text-xl mb-2" style={{color: "#A3CC40"}}>{resultData.nickname}</h3>
                     <p className="mb-8" style={{color: "#fff0f0"}}>{resultData.description}</p>
                     <p className="mb-2 font-DNFBitBitv2 text-xl" style={{color: "#A3CC40"}}>현재 나의 모습은?</p>
