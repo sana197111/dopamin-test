@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'DNFBitBitv2';
+    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype');
+    font-weight:400;
+    font-style:normal;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.blinking-cursor {
+    font-weight: 100;
+    color: #01ff00;
+    animation: blink 1s step-start infinite;
+}
+
+.background-gif {
+    background-image: url('./background1.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 480px 800px; /* GIF의 원래 크기 */
+}
+
+
+.button-active {
+    color: #d2d6d5;
+    border-color: #d2d6d5;
+    background-color: transparent;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.button-active:hover {
+    background-color: gray;
+    color: white;
+}
+
+.button-active:active {
+    background-color: #A3CC40; /* 클릭 상태일 때의 배경 색상 */
+    color: white; /* 클릭 상태일 때의 텍스트 색상 */
+}
