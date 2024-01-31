@@ -73,9 +73,30 @@ function ResultPage() {
                         justifyContent: 'center',
                         margin: '20px 0',
                     }}>
-                        <div style={{ width: '80%' }}>
+                        <div style={{ width: '100%' }}>
                             <img src={poster} alt="Poster" style={{ width: '100%', height: 'auto' }} />
                         </div>
+                    </div>
+                    <p className="mb-2 font-DNFBitBitv2 text-xl" style={{color: "#A3CC40"}}>독파민 팝업스토어</p>
+                    <div 
+                        className="mb-6"
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center", // 가로 방향으로 중앙 정렬
+                            justifyContent: "center", // 세로 방향으로 중앙 정렬
+                            width: "100%", // 컨테이너의 너비를 100%로 설정
+                        }}>
+                        <button onClick={() => window.location.href = "https://www.instagram.com/mukmukpage/"} 
+                            className="font-DNFBitBitv2 button mt-5 px-4 py-2 border rounded" 
+                            style={{
+                                background: "linear-gradient(#75BF42, #A3CC40)", 
+                                width: "200px", // 버튼의 너비를 고정값으로 설정
+                                color: "white",
+                                marginBottom: "5px"
+                            }}>
+                            인스타그램 바로가기
+                        </button>
                     </div>
                 </div>
             )}
