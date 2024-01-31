@@ -18,12 +18,19 @@ const Test = () => {
     }, [id]);
 
     useEffect(() => {
+        quiz.forEach(question => {
+            const img = new Image();
+            img.src = question.image;
+        });
+    }, []);
+    
+    useEffect(() => {
         // 현재 포커스된 요소의 포커스를 제거하여 어떠한 요소도 자동으로 포커스되지 않도록 합니다.
         if (document.activeElement) {
             document.activeElement.blur();
         }
     }, [curQuiz]); // curQuiz가 변경될 때마다 실행
-    
+
     const getScore = (arr) => {
         let idx = 0;
         arr.forEach((item) => {
